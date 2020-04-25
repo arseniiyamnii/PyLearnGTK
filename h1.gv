@@ -1,0 +1,32 @@
+/*start writing diagram with graphviz*/
+
+digraph Couriers {
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+
+edge [
+arrowtail = "empty"
+]
+
+exerciseClass [
+label = "{ExerciseClass|+ name : string\l+ home_country : string\l|+ calculateShipping() : float\l+ ship(): boolean\l}"
+]
+
+Monotype [
+label = "{MonotypeDelivery|\l|+ ship(): boolean\l}"
+]
+
+Pigeon [
+label = "{PigeonPost|\l|+ ship(): boolean\l}"
+]
+
+/*add lines*/
+/*Courier -> Pigeon [dir=back]
+Courier -> Monotype [dir=back]*/
+}
