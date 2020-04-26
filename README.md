@@ -7,5 +7,7 @@ create gui with GTK
 add unit tests  
 connect to exercise class  
 DONE!  
+# Documentation
+To compile diagrams, just run `./graphCompile.sh`
 # LICENSE
 read MIT-LICENSE.txt  
