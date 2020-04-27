@@ -2,7 +2,7 @@
 Learn python  
 This program for training your skils in python  
 # ToDo
-create program architecture with latex+graphviz+uml  
+create programi architecture with latex+Tikz-UML  
 create gui with GTK  
 add unit tests  
 connect to exercise class  
