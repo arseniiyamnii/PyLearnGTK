@@ -1,2 +1,64 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[calc,useregional,showdow]{datetime2}
+\usepackage{titletoc}
+\dottedcontents{section}[1.5in]{\bfseries\large}{1.5in}{10pt}
+
+\usepackage{xparse}
+\NewDocumentCommand{\datesec}{o m m}{%
+    \renewcommand\thesection{\DTMdate{#2}}
+    \IfNoValueTF{#1}
+        {\section{#3}}
+        {\section[#1]{#3}}
+}
+\begin{document}
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+
+       \textbf{DevLog}
+
+       \vspace{0.5cm}
+        Devlog for PyLearnGTK
+
+       \vspace{1.5cm}
+
+       \textbf{Arseni Yamnii}
+
+       \vfill
+
+
+       \vspace{0.8cm}
+
+
+
+       StackOverflow\\
+       Git\\
+       Linux\\
+       Python3\\
+       LaTex\\
+       GTK\\
+       2020
+
+   \end{center}
+\end{titlepage}
+\tableofcontents
+\newpage
+\datesec{2020-04-29}{create DevLog}
 here il starting write dev log with all my thinks(misly in russian) about this project
-at the first, i need learn laTex....hhhmmmm....
+\newpage
+\datesec{2020-05-02}{LaTex}
+Start using Latex
+And so... I create my template for DevLog. It is like diary for application. Here i write some tips and triks)).
+\\ I think sometimes i create script to integrate this tis to Documentation. Maby with some Tags, etc.
+\\ Yes, it is long project... with UML and texts. But it pretty shit functionals. BUT mayby sometimes it get more functional, to got more popularity.
+\\ TODO:
+\begin{itemize}
+  \item Create UML diagram with TikzUML. Yes in latex.....
+  \item Find examples to python with GTK
+  \item Create GTK UI
+  \item create tests to program
+\end{itemize}
+
+\end{document}
+
