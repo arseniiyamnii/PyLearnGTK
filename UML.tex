@@ -1,0 +1,33 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fullpage}
+
+\usepackage{tikz-uml}
+
+\sloppy
+\hyphenpenalty 10000000
+
+\begin{document}
+\begin{center}
+\begin{tikzpicture}
+\umlclass
+{Exercise}
+{
++pathToFile\\
++textOfExercise\\
+}
+{some function}
+\umlclass
+[x=5]
+{firstclass2}
+{some variable2}
+{some function2}
+\umlnote
+[y=5]{firstclass2}
+{it is note to firstclass}
+\end{tikzpicture}
+\end{center}
+\end{document}
