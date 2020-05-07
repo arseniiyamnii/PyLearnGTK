@@ -16,18 +16,39 @@
 \umlclass
 {Exercise}
 {
-+pathToFile\\
-+textOfExercise\\
++pathToFile : str\\
++exerciseText : str\\
++statements : array float\\
++variableA : float
++variableB : float
 }
-{some function}
+{
++init(path : str) : void\\
++getExerciseText() : str\\
++result(result : float) : bool\\
++recreateVariables\\
+}
 \umlclass
 [x=5]
-{firstclass2}
-{some variable2}
-{some function2}
+{MainWindow}
+{\\}
+{\\}
+\umlclass
+[x=8]
+{SettingsWindow}
+{\\}
+{\\}
+\umlclass
+[x=11]
+{ResultWindow}
+{\\}
+{\\}
 \umlnote
-[y=5]{firstclass2}
-{it is note to firstclass}
+[y=5]{Exercise}
+{it is main class. It contain all brain of this progect}
+\umlnote[x=5, y=10]{MainWindow}
+{I cant create ul diagram to this class,\\
+because i must know gtk}
 \end{tikzpicture}
 \end{center}
 \end{document}
