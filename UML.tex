@@ -12,6 +12,7 @@
 
 \begin{document}
 \begin{center}
+  \section{Class Diagram}
 \begin{tikzpicture}
 \umlclass
 {Exercise}
@@ -19,8 +20,8 @@
 +pathToFile : str\\
 +exerciseText : str\\
 +statements : array float\\
-+variableA : float
-+variableB : float
++variableA : float\\
++variableB : float\\
 }
 {
 +init(path : str) : void\\
@@ -34,21 +35,26 @@
 {\\}
 {\\}
 \umlclass
-[x=8]
+[x=10]
 {SettingsWindow}
 {\\}
 {\\}
 \umlclass
-[x=11]
+[x=10, y=5]
 {ResultWindow}
 {\\}
 {\\}
 \umlnote
 [y=5]{Exercise}
 {it is main class. It contain all brain of this progect}
-\umlnote[x=5, y=10]{MainWindow}
-{I cant create ul diagram to this class,\\
+\umlnote[x=5, y=7]{SettingsWindow}{}
+\umlnote[x=5, y=7]{ResultWindow}{}
+\umlnote[x=5, y=7]{MainWindow}
+{I cant create uml diagram to this class,\\
 because i must know gtk}
+\umlcompo{MainWindow}{SettingsWindow}
+\umlcompo{MainWindow}{ResultWindow}
+\umlcompo{MainWindow}{Exercise}
 \end{tikzpicture}
 \end{center}
 \end{document}
